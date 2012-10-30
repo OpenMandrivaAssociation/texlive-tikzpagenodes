@@ -1,12 +1,12 @@
-# revision 23984
+# revision 27723
 # category Package
 # catalog-ctan /graphics/pgf/contrib/tikzpagenodes
-# catalog-date 2011-09-17 01:00:07 +0200
+# catalog-date 2012-09-16 14:57:16 +0200
 # catalog-license lppl
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-tikzpagenodes
-Version:	1.0
-Release:	2
+Version:	1.1
+Release:	1
 Summary:	Create commutative diagrams with TikZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzpagenodes
