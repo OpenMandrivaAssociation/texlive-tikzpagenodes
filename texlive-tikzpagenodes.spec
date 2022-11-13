@@ -1,19 +1,13 @@
-# revision 27723
-# category Package
-# catalog-ctan /graphics/pgf/contrib/tikzpagenodes
-# catalog-date 2012-09-16 14:57:16 +0200
-# catalog-license lppl
-# catalog-version 1.1
 Name:		texlive-tikzpagenodes
-Version:	1.1
-Release:	10
+Version:	64967
+Release:	1
 Summary:	Create commutative diagrams with TikZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzpagenodes
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ marginpar, footer and header area of the current page. They are
 inspired by the 'current page' node defined by PGF/TikZ itself.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +37,8 @@ inspired by the 'current page' node defined by PGF/TikZ itself.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
