@@ -1,6 +1,6 @@
 Name:		texlive-tikzpagenodes
 Version:	64967
-Release:	1
+Release:	2
 Summary:	Create commutative diagrams with TikZ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzpagenodes
