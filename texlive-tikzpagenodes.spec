@@ -3,7 +3,7 @@ Version:	64967
 Release:	2
 Summary:	Create commutative diagrams with TikZ
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzpagenodes
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/tikzpagenodes
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tikzpagenodes.doc.r%{version}.tar.xz
